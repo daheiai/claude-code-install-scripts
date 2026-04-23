@@ -1,11 +1,11 @@
-# Claude Code Install Scripts
+# Claude Code 安装脚本
 
-This repository contains two install scripts used on `daheiai.com`:
+这个仓库包含 `daheiai.com` 当前使用的两个 Claude Code 安装脚本：
 
-- `cc.ps1` for Windows PowerShell
-- `cc.sh` for macOS and Linux shells
+- `cc.ps1`：用于 Windows PowerShell
+- `cc.sh`：用于 macOS / Linux Shell
 
-Current usage:
+当前使用方式：
 
 ```powershell
 irm https://daheiai.com/cc.ps1 | iex
@@ -15,8 +15,8 @@ irm https://daheiai.com/cc.ps1 | iex
 curl -fsSL https://daheiai.com/cc.sh | sh
 ```
 
-Notes:
+说明：
 
-- The scripts automate Claude Code installation on the local machine.
-- Windows users may need to add `C:\Users\<username>\.local\bin\` to user `PATH`.
-- macOS and Linux users may need to add `$HOME/.local/bin` to `PATH` if the shell cannot find `claude`.
+- 这两个脚本用于在本地自动化安装 Claude Code。
+- Windows 用户安装完成后，可能需要把 `C:\Users\<用户名>\.local\bin\` 加到用户级 `PATH`。
+- macOS / Linux 用户安装完成后，如果终端里找不到 `claude`，通常需要把 `$HOME/.local/bin` 加到 `PATH`。
